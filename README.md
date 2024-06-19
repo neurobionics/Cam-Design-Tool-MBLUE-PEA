@@ -83,10 +83,10 @@ _SpringTableOrganizer.m:_
 This script creates/adds columns to a table of candidate springs from a spring vendor (MW Components). It does not directly interact with the other MATLAB scripts, but is useful for finding a good spring for your application. Generally, you will want to pick the spring with the highest potential energy storage capacity that still meets all other needs of the application.
 
 _viableTAfunc_optionaloutputs_cubicK_arbitspring.m:_
-Inputs:
-X: the design variables that parameterize the stiffness curve to be rendered
-thetamin: the minimum limit of the range of motion over which the stiffness curve must be rendered by the cam
-thetamax: the maximum limit of the range of motion over which the stiffness curve must be rendered by the cam
-springparams: a structure containing properties of the coil compression spring to be used with the cam being designed
-preloadenergy: the amount of energy that will be stored in the spring when the mechanism is at its equilibrium angle
-camsaveY1N0: a binary value indicating whether or not to save the generated cam geometry to a file (“cam_surface_pointsDEBUG.txt” by default) upon completion. Reminder: change the name of the generated file before running the routine again if you do not want it to be overwritten.
+* Inputs:
+  * X: the design variables that parameterize the stiffness curve to be rendered
+  * thetamin: the minimum limit of the range of motion over which the stiffness curve must be rendered by the cam
+  * thetamax: the maximum limit of the range of motion over which the stiffness curve must be rendered by the cam
+  * springparams: a structure containing properties of the coil compression spring to be used with the cam being designed
+  * preloadenergy: the amount of energy that will be stored in the spring when the mechanism is at its equilibrium angle
+  * camsaveY1N0: a binary value indicating whether or not to save the generated cam geometry to a file (“cam_surface_pointsDEBUG.txt” by default) upon completion. Reminder: change the name of the generated file before running the routine again if you do not want it to be overwritten.
