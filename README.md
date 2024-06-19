@@ -28,11 +28,35 @@ Now that the desired stiffness function is defined, the corresponding cam surfac
 
 **Spring Selection:**
 Since mechanical work is the integral under the torque-angle curve, we can determine whether a spring is a candidate by comparing its potential energy storage at maximum deflection to the sum of the preload energy at the cam equilibrium angle and the work under the stiffness curve between equilibrium and the range of motion limit (as there are two directions, use the greater magnitude work value). If the spring’s potential energy capacity is greater than that sum, it is a potentially viable choice.
-You should also consider such factors as the tradeoff between open-loop “resolution” and cam mass. Imagine a stiffer and more compliant spring of equal mass and potential energy capacity: A stiffer spring will require less deflection to achieve comparable torques, meaning the cam can be of a smaller volume (and mass). However, the change in work per unit spring deflection is greater in the stiffer spring, so one unit of error between expected and actual deflection causes a greater discrepancy between expected and actual
+You should also consider such factors as the tradeoff between open-loop “resolution” and cam mass. Imagine a stiffer and more compliant spring of equal mass and potential energy capacity: A stiffer spring will require less deflection to achieve comparable torques, meaning the cam can be of a smaller volume (and mass). However, the change in work per unit spring deflection is greater in the stiffer spring, so one unit of error between expected and actual deflection causes a greater discrepancy between expected and actual torque production.
 
 **Range of Motion Selection:**
 
-xxxxx
+Set the range of motion over which the cam will produce the designed stiffness profile. Depending on how close to max compression the spring gets at the tasks' range of motion limits, you may want to taper the cam profile heuristically in CAD. The stiffness can either be lessened, or made to taper to zero torque (occurs when the cam surface is concentric about the joint axis).
+
+**Conversion to CAD**
+
+Follow the following steps to create a basic CAD model of the cam. 
+
+- Open Solidworks
+- Navigate the drop down menus Insert > Curve > Curve Through XYZ Points
+- In the pop-up window, click Browse to bring up file explorer window
+- Switch the file type from *.sldcrv to *.txt in the dropdown menu
+- Navigate to the folder containing your cam surface *.txt, click the file, click Open
+- Once a matrix of XYZ points populates the Curve File window, click OK
+- Start new Front Plane sketch
+- Use the Convert Entities tool in the Sketch tab to make the surface curve an elemnt of the sketch
+- Sketch a circle of the same diameter as the actuator (48mm for the AK80-9) centered at the origin
+- Make any modifications of extensions desired to the curve (e.g., tapering to a circular profile centered on the origin to increase the mechanism's range of motion without further compression of the spring) 
+- Draw lines from the end points of the surface curature to the motor diameter
+- Use the Extrude Boss/Base feature in the Features tab to convert the closed geometry into a solid body of desired thickness
+- Make a cutout in the part to indicate joint angle zero (a vertical line in the Front Plane coincident with the origin)
+- Import cam part into PEA assembly
+- Add concentricity mate between the outer surface of the actuator and the inner surface of the cam
+- Add a parallel mate between the cutout surface of the cam and the long edge of the M-BLUE upright to orient the cam rotationally   
+
+Recommendation: After producing a satisfactory stiffness curve and corresponding cam surface, renaming the cam geometry .txt file and saving a compressed version of the project folder for future reference ensures the cam's relevant information is retained.
+
 
 # Glossary of MATLAB Files
 
