@@ -54,7 +54,7 @@ Input: Strings representing the dataset (e.g., ‘bovi’), joint (e.g., ‘ankl
 Output: Torque, joint angle, velocity, acceleration, and stride time vectors
 
 _I2Rcostfunc.m:_
-	Inputs:
+	- Inputs:
 	X: a row vector containing all decision variables for optimization
 motor_params: a structure containing necessary properties for selected actuator 
 theta_alltasks: a matrix wherein each column is a task’s joint angle trajectory
@@ -63,7 +63,7 @@ theta_dd_alltasks: a matrix wherein each column is a task’s joint acceleration
 stridetime_alltasks: a matrix wherein each column is a task’s timesteps for all samples
 exoTorque_alltasks: a matrix wherein each column is a task’s joint torque trajectory, each scaled by the appropriate assistance fraction
 taskweights: a row vector containing weights for each task’s relative prevalence
-	Outputs:
+	- Outputs:
 I2Rloss_total: This is the minimization variable. It is a scalar value of weighed Joule heating energy loss summed across tasks
 i2r: a matrix wherein each column is the Joule heating power trajectory for a task
 residualTorque: a matrix wherein each column is the torque trajectory that the motor/actuator must generate for the PEA to produce the corresponding total device torque found in input exoTorque_alltasks for a given task.
