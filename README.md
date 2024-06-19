@@ -65,12 +65,12 @@ _I2Rcostfunc.m:_
 *taskweights: a row vector containing weights for each task’s relative prevalence
 * Outputs:
 *I2Rloss_total: This is the minimization variable. It is a scalar value of weighed Joule heating energy loss summed across tasks
-    *i2r: a matrix wherein each column is the Joule heating power trajectory for a task
-    *residualTorque: a matrix wherein each column is the torque trajectory that the motor/actuator must generate for the PEA to produce the corresponding total device torque found in input exoTorque_alltasks for a given task.
-    *cubicTorque: a matrix wherein each column is the torque trajectory that the parallel elastic element will generate for a given task.
-    *IVenergyUse: a row vector wherein each scalar corresponds to the Joule heating energy (weighted by corresponding taskweights value) for a task cycle when PEA is used.
-    *IVpow: a matrix wherein each column is the elementwise product of a task’s current and voltage trajectories
-    *current: a matrix wherein each column is the current required of the motor to produce the corresponding residualTorque trajectory.
+  *i2r: a matrix wherein each column is the Joule heating power trajectory for a task
+  *residualTorque: a matrix wherein each column is the torque trajectory that the motor/actuator must generate for the PEA to produce the corresponding total device torque found in input exoTorque_alltasks for a given task.
+  *cubicTorque: a matrix wherein each column is the torque trajectory that the parallel elastic element will generate for a given task.
+  *IVenergyUse: a row vector wherein each scalar corresponds to the Joule heating energy (weighted by corresponding taskweights value) for a task cycle when PEA is used.
+  *IVpow: a matrix wherein each column is the elementwise product of a task’s current and voltage trajectories
+  *current: a matrix wherein each column is the current required of the motor to produce the corresponding residualTorque trajectory.
 
 _InterX.m:_
 A function to find self intersections of the cam surface curve. 
