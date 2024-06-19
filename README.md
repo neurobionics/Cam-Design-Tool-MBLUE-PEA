@@ -5,7 +5,7 @@ a software tool that facilitates the design of lightweight torsion springs
 
 Before choosing a spring or designing a cam surface, we must determine what torque-angle relationship to render. This consists of the following steps: 
 
-Task Selection: Occurs at the top of OptimizationWrapper.m
+<ins>Task Selection:<\ins> Occurs at the top of OptimizationWrapper.m
 
   Define how many tasks to optimize for, and what those tasks are
 
