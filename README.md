@@ -2,7 +2,7 @@
 
 <p float="left">
   <img src="assets/MultiPlotExample.png" width="500" />
-  <img src="assets/PEAcamApp" width="290" /> 
+  <img src="assets/PEAcamApp.png" width="500" /> 
 </p>
 
 # Design Stage 1: Stiffness Profile Generation
