@@ -128,6 +128,8 @@ _viableTAfunc_optionaloutputs_cubicK_arbitspring.m:_
 
 The app that deploys the GUI at the top of the readme may be installed to MATLAB by downloading and running the file _CamGenerationPEA.mlappinstall_ in the app folder of the repository.
 
+Dependencies: MATLAB installation with Optimization Toolbox
+
 The source code for this tool, located in  in app/src/, is based on the full architecture described above with changes to two files:
 
 _Optimizer.m_ has replaced _OptimizationWrapper.m_
