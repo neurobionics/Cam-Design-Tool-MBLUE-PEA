@@ -168,7 +168,7 @@ _Secondary Inputs:_
 * Multiplot assistance percentage: This value indicates the _total_ assistance fraction provided by the exoskeleton in the multiplot figures
 * Cam curve save file: this is where a successfully generated cam's geometry will be saved for use in CAD modeling
 
-Outputs:
+_Outputs:_
 * X: Parameterization of the optimized stiffness curve
 * RoM Maximum/Minimum: Rang of motion limits of the rendered cam surface (encompasses all extrema of selected optimization task angle trajectories)
 * Cam Profile Preview: An embedded plot of the generated cam surface and actuator profile circle
