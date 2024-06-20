@@ -1,7 +1,12 @@
 # MBLUE-PEA
+a software tool that facilitates the design of cam profiles for PEA module to augment M-BLUE
+
+<p float="left">
+  <img src="assets/MultiPlotExample.png" width="500" />
+  <img src="assets/PEAcamApp.png" width="500" /> 
+</p>
 
 # Design Stage 1: Stiffness Profile Generation
-a software tool that facilitates the design of lightweight torsion springs
 
 Before choosing a spring or designing a cam surface, we must determine what torque-angle relationship to render. This consists of the following steps: 
 
@@ -117,3 +122,55 @@ _viableTAfunc_optionaloutputs_cubicK_arbitspring.m:_
   * springparams: a structure containing properties of the coil compression spring to be used with the cam being designed
   * preloadenergy: the amount of energy that will be stored in the spring when the mechanism is at its equilibrium angle
   * camsaveY1N0: a binary value indicating whether or not to save the generated cam geometry to a file (“cam_surface_pointsDEBUG.txt” by default) upon completion. Reminder: change the name of the generated file before running the routine again if you do not want it to be overwritten.
+ 
+
+# App Version
+
+The app that deploys the GUI at the top of the readme may be installed to MATLAB by downloading and running the file _CamGenerationPEA.mlappinstall_ in the app folder of the repository.
+
+Dependencies: MATLAB installation with Optimization Toolbox
+
+The source code for this tool, located in  in app/src/, is based on the full architecture described above with changes to two files:
+
+_Optimizer.m_ has replaced _OptimizationWrapper.m_
+
+_cam_surf_gen.m_ has replaced _viableTAfunc_optionaloutputs_cubicK_arbitspring.m_
+
+The core function of these files parallels that of the files they replace, but their names are different to distinguish them.
+
+**Use:**
+
+The app currently supports the use of hip, knee, and ankle data from the Georgia Tech 2023 Dataset for the following tasks:
+
+* Squat Lift (25 lbs.)
+* Level Walking (1.2 m/s)
+* Ramp Ascent (5 degree incline)
+* Ramp Descent (5 degree decline)
+* Stair Ascent
+* Stair Descent
+
+_Key User Inputs:_
+* Joint Selection
+* Dataset
+* Task 1
+  * Task
+  * Assistance Fraction
+  * Task Weight
+* Spring Parameters
+* X0: initial guess for the stiffness function parameters
+
+_Secondary Inputs:_
+* Tasks 2-4 are optional, and should be added progressively in ascending order
+* Popup Figure Toggle Switch: Indicate whether or not to create the following popup plots
+  * Multiplot with impact of PEA module on each task's stiffness, torque, power (ex. figure at top of readme)
+  * Progenitor offset curve plot, showing the base curve for the cam geometry alongside the version offset by follower bearing radius
+  * Polar plot of cam geometry alongside circle representing the actuator for scale
+* Multiplot assistance percentage: This value indicates the _total_ assistance fraction provided by the exoskeleton in the multiplot figures
+* Cam curve save file: this is where a successfully generated cam's geometry will be saved for use in CAD modeling
+
+_Outputs:_
+* X: Parameterization of the optimized stiffness curve
+* RoM Maximum/Minimum: Rang of motion limits of the rendered cam surface (encompasses all extrema of selected optimization task angle trajectories)
+* Cam Profile Preview: An embedded plot of the generated cam surface and actuator profile circle
+* Viable Cam Geo Found: A light to indicate whether the tool could generate a viable geometry given the stiffness function and spring properties provided. Green indicates success, red indicates no viable geometry was achieved, grey indicates the routine has not concluded.
+* Popup Figures (described above) 
