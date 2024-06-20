@@ -3,7 +3,7 @@ a software tool that facilitates the design of cam profiles for PEA module to au
 
 <p float="left">
   <img src="assets/MultiPlotExample.png" width="500" />
-  <img src="assets/PEAcamApp.png" width="600" /> 
+  <img src="assets/PEAcamApp.png" width="500" /> 
 </p>
 
 # Design Stage 1: Stiffness Profile Generation
