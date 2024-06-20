@@ -137,3 +137,40 @@ _Optimizer.m_ has replaced _OptimizationWrapper.m_
 _cam_surf_gen.m_ has replaced _viableTAfunc_optionaloutputs_cubicK_arbitspring.m_
 
 The core function of these files parallels that of the files they replace, but their names are different to distinguish them.
+
+** Use: **
+
+The app currently supports the use of hip, knee, and ankle data from the Georgia Tech 2023 Dataset for the following tasks:
+
+* Squat Lift (25 lbs.)
+* Level Walking (1.2 m/s)
+* Ramp Ascent (5 degree incline)
+* Ramp Descent (5 degree decline)
+* Stair Ascent
+* Stair Descent
+
+_Key User Inputs:_
+* Joint Selection
+* Dataset
+* Task 1
+  * Task
+  * Assistance Fraction
+  * Task Weight
+* Spring Parameters
+* X0: initial guess for the stiffness function parameters
+
+_Secondary Inputs:_
+* Tasks 2-4 are optional, and should be added progressively in ascending order
+* Popup Figure Toggle Switch: Indicate whether or not to create the following popup plots
+  * Multiplot with impact of PEA module on each task's stiffness, torque, power (ex. figure at top of readme)
+  * Progenitor offset curve plot, showing the base curve for the cam geometry alongside the version offset by follower bearing radius
+  * Polar plot of cam geometry alongside circle representing the actuator for scale
+* Multiplot assistance percentage: This value indicates the _total_ assistance fraction provided by the exoskeleton in the multiplot figures
+* Cam curve save file: this is where a successfully generated cam's geometry will be saved for use in CAD modeling
+
+Outputs:
+* X: Parameterization of the optimized stiffness curve
+* RoM Maximum/Minimum: Rang of motion limits of the rendered cam surface (encompasses all extrema of selected optimization task angle trajectories)
+* Cam Profile Preview: An embedded plot of the generated cam surface and actuator profile circle
+* Viable Cam Geo Found: A light to indicate whether the tool could generate a viable geometry given the stiffness function and spring properties provided. Green indicates success, red indicates no viable geometry was achieved, grey indicates the routine has not concluded.
+* Popup Figures (described above) 
