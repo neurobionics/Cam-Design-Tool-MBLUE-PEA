@@ -122,3 +122,15 @@ _viableTAfunc_optionaloutputs_cubicK_arbitspring.m:_
   * springparams: a structure containing properties of the coil compression spring to be used with the cam being designed
   * preloadenergy: the amount of energy that will be stored in the spring when the mechanism is at its equilibrium angle
   * camsaveY1N0: a binary value indicating whether or not to save the generated cam geometry to a file (“cam_surface_pointsDEBUG.txt” by default) upon completion. Reminder: change the name of the generated file before running the routine again if you do not want it to be overwritten.
+ 
+
+# App Version
+
+The app that deploys the GUI at the top of the readme may be installed to MATLAB by downloading and running the file _CamGenerationPEA.mlappinstall_ in the app folder of the repository.
+
+The source code for this tool is based on the full architecture described above with changes to two files in app/src/:
+
+_Optimizer.m_ has replaced _OptimizationWrapper.m_
+_cam_surf_gen.m_ has replaced _viableTAfunc_optionaloutputs_cubicK_arbitspring.m_
+
+The core function of these files parallels that of the files they replace, but their names are different to distinguish them.
