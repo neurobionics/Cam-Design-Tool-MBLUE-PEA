@@ -1,5 +1,10 @@
 # MBLUE-PEA
 
+<p float="left">
+  <img src="assets/MultiPlotExample.png" width="500" />
+  <img src="assets/PEAcamApp" width="290" /> 
+</p>
+
 # Design Stage 1: Stiffness Profile Generation
 a software tool that facilitates the design of lightweight torsion springs
 
