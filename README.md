@@ -6,6 +6,9 @@ a software tool that facilitates the design of cam profiles for PEA module to au
   <img src="assets/PEAcamApp.png" width="500" /> 
 </p>
 
+## DOWNLOAD:
+Download the [latest app release]([https://github.com/neurobionics/spring-design-tool/releases](https://github.com/neslerc-UM/MBLUE-PEA/releases/tag/CamAppInstaller)).  
+
 # Design Stage 1: Stiffness Profile Generation
 
 Before choosing a spring or designing a cam surface, we must determine what torque-angle relationship to render. This consists of the following steps: 
