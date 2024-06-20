@@ -138,7 +138,7 @@ _cam_surf_gen.m_ has replaced _viableTAfunc_optionaloutputs_cubicK_arbitspring.m
 
 The core function of these files parallels that of the files they replace, but their names are different to distinguish them.
 
-** Use: **
+**Use:**
 
 The app currently supports the use of hip, knee, and ankle data from the Georgia Tech 2023 Dataset for the following tasks:
 
