@@ -1,0 +1,16 @@
+
+app/standalone/CamGenAppStandalone/PackagingLog.html
+app/standalone/CamGenAppStandalone/for_testing/unresolvedSymbols.txt
+app/standalone/CamGenAppStandalone/for_testing/splash.png
+app/standalone/CamGenAppStandalone/for_testing/requiredMCRProducts.txt
+app/standalone/CamGenAppStandalone/for_testing/readme.txt
+app/standalone/CamGenAppStandalone/for_testing/mccExcludedFiles.log
+app/standalone/CamGenAppStandalone/for_testing/includedSupportPackages.txt
+app/standalone/CamGenAppStandalone/for_testing/CamGenAppStandalone.exe
+app/standalone/CamGenAppStandalone/for_redistribution_files_only/splash.png
+app/standalone/CamGenAppStandalone/for_redistribution_files_only/Rpsi_debug.mat
+app/standalone/CamGenAppStandalone/for_redistribution_files_only/readme.txt
+app/standalone/CamGenAppStandalone/for_redistribution_files_only/CamGenAppStandalone.exe
+app/standalone/CamGenAppStandalone/for_redistribution_files_only/cam_surface_pointsDEBUG.txt
+app/standalone/CamGenAppStandalone/for_redistribution/MyAppInstaller_mcr.exe
+app/standalone/CamGenAppStandalone.prj
