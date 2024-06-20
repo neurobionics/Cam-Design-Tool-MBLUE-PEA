@@ -1,0 +1,97 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="1757194435" file="C:\Users\neslerc\Documents\Benchtop2024\MBLUE-PEA\app\src\CamGenerationPEA.prj" location="C:\Users\neslerc\Documents\Benchtop2024\MBLUE-PEA\app\src" name="CamGenerationPEA" target="target.mlapps" target-name="Package App">
+    <param.appname>CamGenerationPEA</param.appname>
+    <param.authnamewatermark>Chris Nestani</param.authnamewatermark>
+    <param.email>neslerc@umich.edu</param.email>
+    <param.company>University of Michigan</param.company>
+    <param.icon />
+    <param.icons />
+    <param.summary>PEA Design App</param.summary>
+    <param.description />
+    <param.screenshot>C:\Users\neslerc\Documents\Benchtop2024\MBLUE-PEA\assets\MultiPlotExample.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>C:\Users\neslerc\Documents\Benchtop2024\MBLUE-PEA\app</param.output>
+    <param.guid>ce7cbea1-bdd4-4071-8544-a3f50bade486</param.guid>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.description />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\CamGenApp.mlapp</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\C__\Users\neslerc\Documents\Benchtop2024\MBLUE-PEA\app\src\cam_surf_gen.m</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\C__\Users\neslerc\Documents\Benchtop2024\MBLUE-PEA\app\src\CWvectorRotate90.m</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\C__\Users\neslerc\Documents\Benchtop2024\MBLUE-PEA\app\src\ddt.m</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\C__\Users\neslerc\Documents\Benchtop2024\MBLUE-PEA\app\src\filter22.m</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\C__\Users\neslerc\Documents\Benchtop2024\MBLUE-PEA\app\src\getActuatorData.m</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\C__\Users\neslerc\Documents\Benchtop2024\MBLUE-PEA\app\src\getGaitData.m</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\C__\Users\neslerc\Documents\Benchtop2024\MBLUE-PEA\app\src\I2Rcostfunc.m</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\C__\Users\neslerc\Documents\Benchtop2024\MBLUE-PEA\app\src\InterX.m</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\C__\Users\neslerc\Documents\Benchtop2024\MBLUE-PEA\app\src\Optimizer.m</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\Z__\Member Folders\Christopher Nesler\MBLUE\PEA Design\GitHub Version\Gait Data\GT2023data_means\ankle_normalwalk1x2_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\Z__\Member Folders\Christopher Nesler\MBLUE\PEA Design\GitHub Version\Gait Data\GT2023data_means\ankle_rampascent_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\Z__\Member Folders\Christopher Nesler\MBLUE\PEA Design\GitHub Version\Gait Data\GT2023data_means\ankle_rampdescent_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\Z__\Member Folders\Christopher Nesler\MBLUE\PEA Design\GitHub Version\Gait Data\GT2023data_means\ankle_squat25lb_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\Z__\Member Folders\Christopher Nesler\MBLUE\PEA Design\GitHub Version\Gait Data\GT2023data_means\ankle_stairascent_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\Z__\Member Folders\Christopher Nesler\MBLUE\PEA Design\GitHub Version\Gait Data\GT2023data_means\ankle_stairdescent_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\Z__\Member Folders\Christopher Nesler\MBLUE\PEA Design\GitHub Version\Gait Data\GT2023data_means\hip_normalwalk1x2_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\Z__\Member Folders\Christopher Nesler\MBLUE\PEA Design\GitHub Version\Gait Data\GT2023data_means\hip_rampascent_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\Z__\Member Folders\Christopher Nesler\MBLUE\PEA Design\GitHub Version\Gait Data\GT2023data_means\hip_rampdescent_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\Z__\Member Folders\Christopher Nesler\MBLUE\PEA Design\GitHub Version\Gait Data\GT2023data_means\hip_squat25lb_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\Z__\Member Folders\Christopher Nesler\MBLUE\PEA Design\GitHub Version\Gait Data\GT2023data_means\hip_stairascent_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\Z__\Member Folders\Christopher Nesler\MBLUE\PEA Design\GitHub Version\Gait Data\GT2023data_means\hip_stairdescent_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\Z__\Member Folders\Christopher Nesler\MBLUE\PEA Design\GitHub Version\Gait Data\GT2023data_means\knee_normalwalk1x2_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\Z__\Member Folders\Christopher Nesler\MBLUE\PEA Design\GitHub Version\Gait Data\GT2023data_means\knee_rampascent_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\Z__\Member Folders\Christopher Nesler\MBLUE\PEA Design\GitHub Version\Gait Data\GT2023data_means\knee_rampdescent_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\Z__\Member Folders\Christopher Nesler\MBLUE\PEA Design\GitHub Version\Gait Data\GT2023data_means\knee_squat25lb_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\Z__\Member Folders\Christopher Nesler\MBLUE\PEA Design\GitHub Version\Gait Data\GT2023data_means\knee_stairascent_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\AppData\Roaming\MathWorks\MATLAB Add-Ons\Apps\CamGenerationPEA\Z__\Member Folders\Christopher Nesler\MBLUE\PEA Design\GitHub Version\Gait Data\GT2023data_means\knee_stairdescent_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\Documents\Benchtop2024\MBLUE-PEA\app\Rpsi_debug.mat</file>
+    </fileset.depfun>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\definecolorset.m</file>
+    </fileset.resources>
+    <fileset.package />
+    <build-deliverables>
+      <file location="C:\Users\neslerc\Documents\Benchtop2024\MBLUE-PEA" name="app" optional="false">C:\Users\neslerc\Documents\Benchtop2024\MBLUE-PEA\app</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2022a</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>

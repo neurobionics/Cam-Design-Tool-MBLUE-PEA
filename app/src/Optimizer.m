@@ -2,7 +2,7 @@ function [X,viable,surfpoints,thetamin,thetamax] = ...
 Optimizer(inputJoint,inputTasks,inputDataset,inputTaskWeights,...
 inputAssistFrac,inputActuator,inputSubnum,inputX0,multiplotAssistFrac,springparams,figTF)
 close all
-run("definecolorset.m") %pick colors for figures
+definecolorset %pick colors for figures
 
 tasklist = inputTasks;
 
