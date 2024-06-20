@@ -1,4 +1,5 @@
 # MBLUE-PEA
+a software tool that facilitates the design of cam profiles for PEA module to augment M-BLUE
 
 <p float="left">
   <img src="assets/MultiPlotExample.png" width="500" />
@@ -6,7 +7,6 @@
 </p>
 
 # Design Stage 1: Stiffness Profile Generation
-a software tool that facilitates the design of lightweight torsion springs
 
 Before choosing a spring or designing a cam surface, we must determine what torque-angle relationship to render. This consists of the following steps: 
 
