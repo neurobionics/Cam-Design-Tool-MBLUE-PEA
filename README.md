@@ -60,6 +60,9 @@ Recommendation: After producing a satisfactory stiffness curve and corresponding
 
 # Glossary of MATLAB Files
 
+_CWvectorRotate90.m:_
+Rotates a vector by 90 degrees, clockwise
+
 _ddt.m:_
 Performs numeric derivatives using _filter22.m_
 
