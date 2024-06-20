@@ -7,7 +7,7 @@ a software tool that facilitates the design of cam profiles for PEA module to au
 </p>
 
 ## DOWNLOAD:
-Download the [latest app release]([https://github.com/neurobionics/spring-design-tool/releases](https://github.com/neslerc-UM/MBLUE-PEA/releases/tag/CamAppInstaller)).  
+Download the [latest app installer release](https://github.com/neurobionics/spring-design-tool/releases](https://github.com/neslerc-UM/MBLUE-PEA/releases/tag/CamAppInstaller).  
 
 # Design Stage 1: Stiffness Profile Generation
 
