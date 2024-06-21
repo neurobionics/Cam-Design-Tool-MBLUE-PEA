@@ -1,4 +1,4 @@
-# MBLUE-PEA
+# MBLUE-PEA Cam Design Tool
 a software tool that facilitates the design of cam profiles for PEA module to augment M-BLUE
 
 <p float="left">
