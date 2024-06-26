@@ -45,7 +45,7 @@ for j = 1:tasks
 
     I2Rloss(1,j) = trapz(stridetime,i2r(:,j)); %integrate power loss over time -> E loss
 
-    voltage = current(:,j)*motor_params.Rphase + motor_params.Le*ddt(current(:,j)) + motor_params.kt*theta_d;
+    voltage = current(:,j)*motor_params.Rphase + motor_params.Le*ddt_open(current(:,j)) + motor_params.kt*theta_d;
     IVpow(:,j) = current(:,j).*voltage;
     IVenergyUse(1,j) = trapz(stridetime,IVpow(:,j));
 end

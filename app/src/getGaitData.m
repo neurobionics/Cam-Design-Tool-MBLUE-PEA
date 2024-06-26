@@ -72,8 +72,8 @@ if isequal(dataset,'bovi')
     %shift ankle angles to start trajectory at zero
     theta = (theta-theta(1));
     %calculate derivatives
-    theta_d = ddt(theta,dt);
-    theta_dd = ddt(theta_d,dt);
+    theta_d = ddt_open(theta,dt);
+    theta_dd = ddt_open(theta_d,dt);
     %negate torque values to match proper sign convention
     jointTorque = -jointTorque;
 
@@ -215,8 +215,8 @@ elseif isequal(dataset,'GT2023')
 %     theta = (theta-theta(1));
 
     %calculate derivatives
-    theta_d = ddt(theta,dt);
-    theta_dd = ddt(theta_d,dt);
+    theta_d = ddt_open(theta,dt);
+    theta_dd = ddt_open(theta_d,dt);
 
 
     %any other processing that must be done to all GT2023 data goes here
@@ -356,8 +356,8 @@ elseif isequal(dataset,'GT2023means_mat')
 %     theta = (theta-theta(1));
 
     %calculate derivatives
-    theta_d = ddt(theta,dt);
-    theta_dd = ddt(theta_d,dt);
+    theta_d = ddt_open(theta,dt);
+    theta_dd = ddt_open(theta_d,dt);
 
 
     %any other processing that must be done to all GT2023 data goes here
