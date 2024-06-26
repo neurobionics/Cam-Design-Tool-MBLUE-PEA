@@ -1,10 +1,13 @@
-# MBLUE-PEA
+# MBLUE-PEA Cam Design Tool
 a software tool that facilitates the design of cam profiles for PEA module to augment M-BLUE
 
 <p float="left">
   <img src="assets/MultiPlotExample.png" width="500" />
   <img src="assets/PEAcamApp.png" width="500" /> 
 </p>
+
+## DOWNLOAD:
+Download the [latest app installer release](https://github.com/neslerc-UM/MBLUE-PEA/releases/tag/CamAppInstaller).  
 
 # Design Stage 1: Stiffness Profile Generation
 
