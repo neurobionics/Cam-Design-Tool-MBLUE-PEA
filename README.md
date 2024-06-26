@@ -149,8 +149,6 @@ The app currently supports the use of hip, knee, and ankle data from the Georgia
 * Level Walking (1.2 m/s)
 * Ramp Ascent (5 degree incline)
 * Ramp Descent (5 degree decline)
-* Stair Ascent
-* Stair Descent
 
 _Key User Inputs:_
 * Joint Selection
