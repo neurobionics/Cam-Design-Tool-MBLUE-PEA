@@ -72,14 +72,11 @@ Recommendation: After producing a satisfactory stiffness curve and corresponding
 _CWvectorRotate90.m:_
 Rotates a vector by 90 degrees, clockwise
 
-_ddt.m:_
-Performs numeric derivatives using _filter22.m_
+_ddt_open.m:_
+Performs numeric derivatives.
 
 _definecolorset.m:_
 	Defines colors used by multiplot displaying effect of using PEA on optimization tasks.
- 
-_filter22.m:_
-Used by ddt.m to perform numeric derivatives.
 
 _getActuatorData.m:_ 
 	Input: String representing name of actuator to be used for PEA device.
