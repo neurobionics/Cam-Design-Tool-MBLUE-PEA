@@ -7,7 +7,7 @@ a software tool that facilitates the design of cam profiles for PEA module to au
 </p>
 
 ## DOWNLOAD:
-Download the [latest app installer release](https://github.com/neslerc-UM/MBLUE-PEA/releases/tag/CamAppInstaller).  
+Download the [latest app installer release](https://github.com/neslerc-UM/MBLUE-PEA/releases/tag/CamGenApp).  
 
 # Design Stage 1: Stiffness Profile Generation
 
