@@ -2,6 +2,7 @@
 a software tool that facilitates the design of cam profiles for PEA module to augment M-BLUE
 
 <p float="left">
+  <img src="assets/TestbenchCamPEA.png" width="500" />
   <img src="assets/MultiPlotExample.png" width="500" />
   <img src="assets/PEAcamApp.png" width="500" /> 
 </p>
@@ -163,7 +164,7 @@ _Key User Inputs:_
 _Secondary Inputs:_
 * Tasks 2-4 are optional, and should be added progressively in ascending order
 * Popup Figure Toggle Switch: Indicate whether or not to create the following popup plots
-  * Multiplot with impact of PEA module on each task's stiffness, torque, power (ex. figure at top of readme)
+  * Multiplot with impact of PEA module on each task's stiffness, torque, power (ex. figure at top of readme). Each row corresponds to the input task of the same number.
   * Progenitor offset curve plot, showing the base curve for the cam geometry alongside the version offset by follower bearing radius
   * Polar plot of cam geometry alongside circle representing the actuator for scale
 * Multiplot assistance percentage: This value indicates the _total_ assistance fraction provided by the exoskeleton in the multiplot figures
