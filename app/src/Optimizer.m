@@ -4,15 +4,24 @@ inputAssistFrac,inputActuator,inputSubnum,inputX0,multiplotAssistFrac,springpara
 close all
 definecolorset %pick colors for figures
 
-tasklist = inputTasks;
+i = 1;
+while ~strcmp(inputTasks{i},'None')
+    i = i+1;
+    if i>length(inputTasks)
+        break
+    end
+end
+i = i - 1;
+
+tasklist = inputTasks(1:i);
 
 subnum = inputSubnum; %placeholder input to gait retrieval function
 
-datasetlist = inputDataset;
+datasetlist = inputDataset(1:i);
 
-taskweights = inputTaskWeights;
+taskweights = inputTaskWeights(1:i);
 
-assistFractionList = inputAssistFrac;
+assistFractionList = inputAssistFrac(1:i);
 
 tasks = length(assistFractionList);
 
