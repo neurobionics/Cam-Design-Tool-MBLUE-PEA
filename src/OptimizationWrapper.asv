@@ -301,7 +301,7 @@ for i = 1:tasks
     plot(downsample(stridetime(:,i),n),downsample(I2RBase(:,i),n),'color',[100/256 0 0]) %Joule Heating power with no spring
     hold on
     plot(downsample(stridetime(:,i),n),downsample(I2R(:,i),n),'color',[211/256 105/256 105/256]) %Joule Heating power with with selected quadratic spring
-    ylabel('Power (W)')
+    ylabel('I^2R Power (W)')
     if i==1
         leg3 = legend('Baseline (QDD)','PEA');
         set(leg3,'Box','off','Location','south','Orientation','horizontal')
@@ -318,19 +318,19 @@ sgtitle({title,taskstitle})
     fname = 'myfigure';
     picturewidth = 20; % set this parameter and keep it forever
     hw_ratio = 0.65; % feel free to play with this ratio
-    set(findall(hfig,'-property','FontSize'),'FontSize',10) % adjust fontsize to your document
+    set(findall(hfig,'-property','FontSize'),'FontSize',8) % adjust fontsize to your document
     set(findall(hfig,'-property','LineWidth'),'LineWidth',1.5) % adjust linewidth
     
     set(findall(hfig,'-property','Box'),'Box','off') % optional
     set(findall(hfig,'-property','Interpreter'),'Interpreter','latex') 
     set(findall(hfig,'-property','TickLabelInterpreter'),'TickLabelInterpreter','latex')
 %     set(hfig,'Units','centimeters','Position',[3 3 picturewidth hw_ratio*picturewidth])
-    set(hfig,'Units','centimeters','Position',[3.0000    3.0000   23.8464   21.5533])
+    set(hfig,'Units','centimeters','Position',[3.0000    3.0000   23.8464   18.3254])
 
     pos = get(hfig,'Position');
     set(hfig,'PaperPositionMode','Auto','PaperUnits','centimeters','PaperSize',[pos(3), pos(4)])
-    set(leg3,'Position',[0.6335    0.96    0.3443    0.0504]);
-    set(leg1,'Position',[0.0340    0.96    0.5959    0.0504]);
+    set(leg3,'Position',[0.6335    0.9591    0.3443    0.0504]);
+    set(leg1,'Position',[0.0340    0.9591    0.5959    0.0504]);
     
 %% Output Numeric Results For Paper
 

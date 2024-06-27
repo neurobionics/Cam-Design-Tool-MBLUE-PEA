@@ -25,18 +25,6 @@ assistFractionList = inputAssistFrac(1:i);
 
 tasks = length(assistFractionList);
 
-for i = 1:tasks
-    if strcmp(tasklist{i}, 'squat25lb')
-        tasktitlelist{i} = 'Squat';
-    elseif strcmp(tasklist{i}, 'normalwalk1x2')
-        tasktitlelist{i} = 'Level';
-    elseif strcmp(tasklist{i}, 'rampascent')
-        tasktitlelist{i} = 'Ramp Up';
-    elseif strcmp(tasklist{i}, 'rampdescent')
-        tasktitlelist{i} = 'Ramp Down';
-    end
-end
-
 %Subject Mass
 subMass = 75; %[kg]
 
@@ -198,8 +186,7 @@ end
 % Create a new composite figure
 if figTF
     hfig = figure;  % save the figure handle in a variable
-    title = 'Stiffness, Torque, Power Plots (Tasks by Row)';
-    taskstitle = "";
+    gtitle('Stiffness, Torque, Power Plots (Tasks by Row)')
     n = 2; %downsample factor
     for i = 1:tasks
         %subplot 1: plot stiffness
@@ -234,36 +221,36 @@ if figTF
         plot(downsample(stridetime(:,i),n),downsample(I2RBase(:,i),n),'color',[100/256 0 0]) %Joule Heating power with no spring
         hold on
         plot(downsample(stridetime(:,i),n),downsample(I2R(:,i),n),'color',[211/256 105/256 105/256]) %Joule Heating power with no spring
-        hold on %Joule Heating power with with selected quadratic spring
-        ylabel('Power (W)')
+        hold on) %Joule Heating power with with selected quadratic spring
+        ylabel('I^2R Power (W)')
         if i==1
             leg3 = legend('Baseline (QDD)','PEA');
             set(leg3,'Box','off','Location','south','Orientation','horizontal')
         elseif i == 4
             xlabel('Stride Time (sec)')
         end
-        taskstitle = taskstitle + tasktitlelist{i};
-        if ~(i==tasks)
-            taskstitle = taskstitle + ', ';
-        end      
+        title = strcat(title,tasktitlelist{i});
+        if ~i==tasks
+            title = strcat(title,', ');
+        end        
     end
-    sgtitle({title,taskstitle})
+sgtitle(title)
 
     %% Multiplot Figure Property Setup
     fname = 'myfigure';
     picturewidth = 20; % set this parameter and keep it forever
     hw_ratio = 0.65; % feel free to play with this ratio
-    set(findall(hfig,'-property','FontSize'),'FontSize',10) % adjust fontsize to your document
+    set(findall(hfig,'-property','FontSize'),'FontSize',8) % adjust fontsize to your document
     set(findall(hfig,'-property','LineWidth'),'LineWidth',1.5) % adjust linewidth
     
     set(findall(hfig,'-property','Box'),'Box','off') % optional
     set(findall(hfig,'-property','Interpreter'),'Interpreter','latex') 
     set(findall(hfig,'-property','TickLabelInterpreter'),'TickLabelInterpreter','latex')
-    set(hfig,'Units','centimeters','Position',[3 3 23.8464   21.5533])
+    set(hfig,'Units','centimeters','Position',[3 3 picturewidth hw_ratio*picturewidth])
     pos = get(hfig,'Position');
     set(hfig,'PaperPositionMode','Auto','PaperUnits','centimeters','PaperSize',[pos(3), pos(4)])
-    set(leg3,'Position',[0.6335    0.96    0.3443    0.0504]);
-    set(leg1,'Position',[0.0340    0.96    0.5959    0.0504]);
+    set(leg3,'Position',[0.6335    0.9491    0.3443    0.0504]);
+    set(leg1,'Position',[0.0340    0.9491    0.5959    0.0504]);
 end
 X = cxvec;
 end
