@@ -5,7 +5,7 @@ a software tool that facilitates the design of cam profiles for PEA module to au
   <img src="assets/TestbenchCamPEA.png" width="500" />
   <img src="assets/MultiPlotExample.svg" width="500" />
   <img src="assets/PEAcamApp.png" width="500" /> 
-  <img src="assets/spring GIF.gif" width="290" /> 
+  <img src="assets/camgif.gif" width="290" /> 
 </p>
 
 ## DOWNLOAD:
