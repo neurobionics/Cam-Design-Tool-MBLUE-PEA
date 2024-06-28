@@ -2,10 +2,11 @@
 a software tool that facilitates the design of cam profiles for PEA module to augment M-BLUE
 
 <p float="left">
-  <img src="assets/TestbenchCamPEA.png" width="400" />
-  <img src="assets/MultiPlotExample.svg" width="500" />
   <img src="assets/PEAcamApp.png" width="500" /> 
   <img src="assets/camgif.gif" width="310" /> 
+  <img src="assets/TestbenchCamPEA.png" width="400" />
+  <img src="assets/MultiPlotExample.svg" width="500" />
+
 </p>
 
 ## DOWNLOAD:
