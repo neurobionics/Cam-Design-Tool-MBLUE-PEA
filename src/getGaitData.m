@@ -85,7 +85,7 @@ elseif isequal(dataset,'GT2023')
     if isequal(task,'normalwalk1x2')  %normal walking (1.2 m/s)
         filename = 'normal_walk_1_1-2_segmented.mat';
         fullpath = strcat(rootpath,filename);
-        data = open(fullpath);
+        data = load(fullpath);
         if isequal(joint,'ankle')
             theta = data.angle.avg_l.sig_mu.ankle_angle_l;
             jointTorque = data.moment_filt.avg_l.sig_mu.ankle_angle_l_moment;
@@ -102,7 +102,7 @@ elseif isequal(dataset,'GT2023')
     elseif isequal(task,'stairascent') %switched from R to L due to NaN in torque array (last two samples)
         filename = 'stairs_1_up_segmented.mat';
         fullpath = strcat(rootpath,filename);
-        data = open(fullpath);
+        data = load(fullpath);
         if isequal(joint,'ankle')
             theta = data.angle.avg_l.sig_mu.ankle_angle_l;
             jointTorque = data.moment_filt.avg_l.sig_mu.ankle_angle_l_moment;
@@ -119,7 +119,7 @@ elseif isequal(dataset,'GT2023')
     elseif isequal(task,'stairdescent')
         filename = 'stairs_1_down_segmented.mat';
         fullpath = strcat(rootpath,filename);
-        data = open(fullpath);
+        data = load(fullpath);
         if isequal(joint,'ankle')
             theta = data.angle.avg_r.sig_mu.ankle_angle_r;
             jointTorque = data.moment_filt.avg_r.sig_mu.ankle_angle_r_moment;
@@ -136,7 +136,7 @@ elseif isequal(dataset,'GT2023')
     elseif isequal(task,'rampascent')
         filename = 'incline_walk_1_up5_segmented.mat';
         fullpath = strcat(rootpath,filename);
-        data = open(fullpath);
+        data = load(fullpath);
         if isequal(joint,'ankle')
             theta = data.angle.avg_l.sig_mu.ankle_angle_l;
             jointTorque = data.moment_filt.avg_l.sig_mu.ankle_angle_l_moment;
@@ -153,7 +153,7 @@ elseif isequal(dataset,'GT2023')
     elseif isequal(task,'rampdescent')
         filename = 'incline_walk_1_down5_segmented.mat';
         fullpath = strcat(rootpath,filename);
-        data = open(fullpath);
+        data = load(fullpath);
         if isequal(joint,'ankle')
             theta = data.angle.avg_r.sig_mu.ankle_angle_r;
             jointTorque = data.moment_filt.avg_r.sig_mu.ankle_angle_r_moment;
@@ -169,7 +169,7 @@ elseif isequal(dataset,'GT2023')
     elseif isequal(task,'squat25lb')
         filename = 'squats_1_25lbs_segmented.mat';
         fullpath = strcat(rootpath,filename);
-        data = open(fullpath);
+        data = load(fullpath);
         if isequal(joint,'ankle')
             theta = data.angle.avg_r.sig_mu.ankle_angle_r;
             jointTorque = data.moment_filt.avg_r.sig_mu.ankle_angle_r_moment;

@@ -146,7 +146,7 @@ while viable == 0
 end
 
 %% Make Polar Plot for (R, Psi)
-open("Rpsi_debug.mat");
+ans = load("Rpsi_debug.mat");
 if figTF
     f1 = figure;
     polarplot(ans.psi,ans.R)

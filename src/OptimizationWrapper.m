@@ -222,7 +222,7 @@ while viable == 0
 end
 
 %% Make Polar Plot for (R, Psi)
-open("Rpsi_debug.mat");
+ans = load("Rpsi_debug.mat");
 f1 = figure;
 polarplot(ans.psi,ans.R)
 hold on
@@ -272,7 +272,7 @@ n = 2; %downsample factor
 for i = 1:tasks
     %subplot 1: plot stiffness
     subplot(4,3,(i-1)*3+1)
-    plot(downsample(theta(:,i),n),downsample(exoTorque(:,i),n),'color',light) %total exo torque as fcn of angle
+    plot(downsample(theta(:,i),n),downsample(exoTorque(:,i),n),'color',lite) %total exo torque as fcn of angle
     hold on
     plot(downsample(theta(:,i),n),downsample(residualTorque(:,i),n),'color',med)
     plot(downsample(theta(:,i),n),downsample(cubicTorque(:,i),n),'color',dark)
@@ -284,7 +284,7 @@ for i = 1:tasks
 
     %subplot 2: plot torque
     subplot(4,3,(i-1)*3+2)
-    plot(downsample(stridetime(:,i),n),downsample(exoTorque(:,i),n),'color',light)
+    plot(downsample(stridetime(:,i),n),downsample(exoTorque(:,i),n),'color',lite)
     hold on
     plot(downsample(stridetime(:,i),n),downsample(residualTorque(:,i),n),'color',med)
     plot(downsample(stridetime(:,i),n),downsample(cubicTorque(:,i),n),'color',dark)
