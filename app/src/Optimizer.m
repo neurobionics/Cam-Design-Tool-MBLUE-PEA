@@ -4,6 +4,8 @@ inputAssistFrac,inputActuator,inputSubnum,inputX0,multiplotAssistFrac,springpara
 close all
 definecolorset %pick colors for figures
 
+addpath("src\data\")
+
 i = 1;
 while ~strcmp(inputTasks{i},'None')
     i = i+1;

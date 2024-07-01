@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="2202735771" file="C:\Users\neslerc\Documents\Benchtop2024\MBLUE-PEA\app\src\CamGenApp.prj" location="C:\Users\neslerc\Documents\Benchtop2024\MBLUE-PEA\app\src" name="CamGenApp" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="1864131424" file="C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\app\src\CamGenApp.prj" location="C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\app\src" name="CamGenApp" target="target.mlapps" target-name="Package App">
     <param.appname>CamGenApp</param.appname>
     <param.authnamewatermark>Chris Nestani</param.authnamewatermark>
     <param.email>neslerc@umich.edu</param.email>
@@ -8,7 +8,7 @@
     <param.icons />
     <param.summary>PEA Design App</param.summary>
     <param.description />
-    <param.screenshot>C:\Users\neslerc\AppData\Local\Temp\tp50050253_2218_48c2_b534_df77f802f748.png</param.screenshot>
+    <param.screenshot>C:\Users\neslerc\AppData\Local\Temp\tp1f594fee_a825_4048_a2f2_7526a6674b57.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name />
     <param.products.id />
@@ -30,7 +30,7 @@
       <file>${PROJECT_ROOT}\CamGenApp.mlapp</file>
     </fileset.main>
     <fileset.depfun>
-      <file>C:\Users\neslerc\Documents\Benchtop2024\MBLUE-PEA\app\Rpsi_debug.mat</file>
+      <file>C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\app\Rpsi_debug.mat</file>
       <file>${PROJECT_ROOT}\cam_surf_gen.m</file>
       <file>${PROJECT_ROOT}\CWvectorRotate90.m</file>
       <file>${PROJECT_ROOT}\data\ankle_normalwalk1x2_allsubavgs.mat</file>
@@ -57,6 +57,7 @@
       <file>${PROJECT_ROOT}\I2Rcostfunc.m</file>
       <file>${PROJECT_ROOT}\InterX.m</file>
       <file>${PROJECT_ROOT}\Optimizer.m</file>
+      <file>${PROJECT_ROOT}\robotics-social.png</file>
     </fileset.depfun>
     <fileset.resources>
       <file>${PROJECT_ROOT}\definecolorset.m</file>
