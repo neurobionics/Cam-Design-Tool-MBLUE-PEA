@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="3886393160" file="C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\app\src\CamGenApp.prj" location="C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\app\src" name="CamGenApp" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="2847014272" file="C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\app\src\CamGenApp.prj" location="C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\app\src" name="CamGenApp" target="target.mlapps" target-name="Package App">
     <param.appname>CamGenApp</param.appname>
     <param.authnamewatermark>Chris Nestani</param.authnamewatermark>
     <param.email>neslerc@umich.edu</param.email>
@@ -8,13 +8,13 @@
     <param.icons />
     <param.summary>PEA Design App</param.summary>
     <param.description />
-    <param.screenshot>C:\Users\neslerc\AppData\Local\Temp\tp87fee9c6_de82_48ab_9d44_925d44b6ec31.png</param.screenshot>
+    <param.screenshot>C:\Users\neslerc\AppData\Local\Temp\tp4b75ac79_bfa4_4fd3_94c8_9edbe195e986.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />
     <param.platforms />
-    <param.output>C:\Users\neslerc\Documents\Benchtop2024\MBLUE-PEA\app</param.output>
+    <param.output>C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\app</param.output>
     <param.guid>ce7cbea1-bdd4-4071-8544-a3f50bade486</param.guid>
     <unset>
       <param.icon />
@@ -65,7 +65,7 @@
     </fileset.resources>
     <fileset.package />
     <build-deliverables>
-      <file location="C:\Users\neslerc\Documents\Benchtop2024\MBLUE-PEA" name="app" optional="false">C:\Users\neslerc\Documents\Benchtop2024\MBLUE-PEA\app</file>
+      <file location="C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA" name="app" optional="false">C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\app</file>
     </build-deliverables>
     <workflow />
     <matlab>
