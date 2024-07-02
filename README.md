@@ -11,7 +11,9 @@ a software tool that facilitates the design of cam profiles for PEA module to au
 
 ## STANDALONE .EXE APP DOWNLOAD:
 Download CamGenApp.exe from the [latest release](https://github.com/neslerc-UM/MBLUE-PEA/releases/tag/CamGenApp).  
+
 Install [Matlab Runtime v9.12](https://www.mathworks.com/products/compiler/matlab-runtime.html) from web or using MyAppInstaller_web.exe from the release linked above.
+
 Run CamSpringApp.exe
 
 ## INTEGRATED MATLAB APP DOWNLOAD:
