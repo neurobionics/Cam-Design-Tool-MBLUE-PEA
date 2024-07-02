@@ -191,7 +191,7 @@ function [isthiscamviable,surfpoints] = cam_surf_gen(X,thetamin,thetamax,...
             xlabel('X Dimension (m)')
             ylabel('Y Dimension (m)') 
             leg1=legend('Cam Surface','Rotation Center','Progenetor Curve');
-            set(leg1,'Box','off','Location','north','Orientation','vertical')
+            set(leg1,'Box','off','Location','best','Orientation','vertical')
         end
 
     end
