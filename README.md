@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12627010.svg)](https://doi.org/10.5281/zenodo.12627010)
+
 # MBLUE-PEA Cam Design Tool
 a software tool that facilitates the design of cam profiles for PEA module to augment M-BLUE
 
