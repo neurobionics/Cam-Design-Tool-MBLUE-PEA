@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.12627010.svg)](https://doi.org/10.5281/zenodo.12627010)
+
 # MBLUE-PEA Cam Design Tool
 a software tool that facilitates the design of cam profiles for PEA module to augment M-BLUE
 
@@ -9,8 +11,16 @@ a software tool that facilitates the design of cam profiles for PEA module to au
 
 </p>
 
-## DOWNLOAD:
-Download the [latest app installer release](https://github.com/neslerc-UM/MBLUE-PEA/releases/tag/CamGenApp).  
+## STANDALONE .EXE APP DOWNLOAD:
+Download CamGenApp.exe from the [latest release](https://github.com/neslerc-UM/MBLUE-PEA/releases/tag/CamGenApp).  
+
+Install [Matlab Runtime v9.12](https://www.mathworks.com/products/compiler/matlab-runtime.html) from web or using MyAppInstaller_web.exe from the release linked above.
+
+Run CamSpringApp.exe
+
+## INTEGRATED MATLAB APP DOWNLOAD:
+Download and run CamGenApp.mlappinstall from the [latest release](https://github.com/neslerc-UM/MBLUE-PEA/releases/tag/CamGenApp).  
+This option requires a licensed MATLAB installation and the Optimization Toolbox, but will install faster and allow for customization of the app in code.
 
 # Design Stage 1: Stiffness Profile Generation
 
