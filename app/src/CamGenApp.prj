@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="1645504692" file="C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\app\src\CamGenApp.prj" location="C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\app\src" name="CamGenApp" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="3873933916" file="C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\app\src\CamGenApp.prj" location="C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\app\src" name="CamGenApp" target="target.mlapps" target-name="Package App">
     <param.appname>CamGenApp</param.appname>
     <param.authnamewatermark>Chris Nestani</param.authnamewatermark>
     <param.email>neslerc@umich.edu</param.email>
@@ -8,7 +8,7 @@
     <param.icons />
     <param.summary>PEA Design App</param.summary>
     <param.description />
-    <param.screenshot>C:\Users\neslerc\AppData\Local\Temp\tp9338686c_e046_4217_941b_4ec7e8b3ed5b.png</param.screenshot>
+    <param.screenshot>C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\assets\TestbenchCamPEA.png</param.screenshot>
     <param.version>1.0</param.version>
     <param.products.name>
       <item>Optimization Toolbox</item>
@@ -34,27 +34,27 @@
     </fileset.main>
     <fileset.depfun>
       <file>${PROJECT_ROOT}\cam_surf_gen.m</file>
-      <file>${PROJECT_ROOT}\data\ankle_normalwalk1x2_allsubavgs.mat</file>
-      <file>${PROJECT_ROOT}\data\ankle_rampascent_allsubavgs.mat</file>
-      <file>${PROJECT_ROOT}\data\ankle_rampdescent_allsubavgs.mat</file>
-      <file>${PROJECT_ROOT}\data\ankle_squat25lb_allsubavgs.mat</file>
-      <file>${PROJECT_ROOT}\data\ankle_stairascent_allsubavgs.mat</file>
-      <file>${PROJECT_ROOT}\data\ankle_stairdescent_allsubavgs.mat</file>
-      <file>${PROJECT_ROOT}\data\hip_normalwalk1x2_allsubavgs.mat</file>
-      <file>${PROJECT_ROOT}\data\hip_rampascent_allsubavgs.mat</file>
-      <file>${PROJECT_ROOT}\data\hip_rampdescent_allsubavgs.mat</file>
-      <file>${PROJECT_ROOT}\data\hip_squat25lb_allsubavgs.mat</file>
-      <file>${PROJECT_ROOT}\data\hip_stairascent_allsubavgs.mat</file>
-      <file>${PROJECT_ROOT}\data\hip_stairdescent_allsubavgs.mat</file>
-      <file>${PROJECT_ROOT}\data\knee_normalwalk1x2_allsubavgs.mat</file>
-      <file>${PROJECT_ROOT}\data\knee_rampascent_allsubavgs.mat</file>
-      <file>${PROJECT_ROOT}\data\knee_rampdescent_allsubavgs.mat</file>
-      <file>${PROJECT_ROOT}\data\knee_squat25lb_allsubavgs.mat</file>
-      <file>${PROJECT_ROOT}\data\knee_stairascent_allsubavgs.mat</file>
-      <file>${PROJECT_ROOT}\data\knee_stairdescent_allsubavgs.mat</file>
       <file>${PROJECT_ROOT}\Optimizer.m</file>
       <file>${PROJECT_ROOT}\robotics-social.png</file>
       <file>C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\src\CWvectorRotate90.m</file>
+      <file>C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\src\data\ankle_normalwalk1x2_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\src\data\ankle_rampascent_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\src\data\ankle_rampdescent_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\src\data\ankle_squat25lb_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\src\data\ankle_stairascent_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\src\data\ankle_stairdescent_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\src\data\hip_normalwalk1x2_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\src\data\hip_rampascent_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\src\data\hip_rampdescent_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\src\data\hip_squat25lb_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\src\data\hip_stairascent_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\src\data\hip_stairdescent_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\src\data\knee_normalwalk1x2_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\src\data\knee_rampascent_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\src\data\knee_rampdescent_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\src\data\knee_squat25lb_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\src\data\knee_stairascent_allsubavgs.mat</file>
+      <file>C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\src\data\knee_stairdescent_allsubavgs.mat</file>
       <file>C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\src\ddt_open.m</file>
       <file>C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\src\definecolorset.m</file>
       <file>C:\Users\neslerc\Documents\Benchtop2024\Cam-Design-Tool-MBLUE-PEA\src\getActuatorData.m</file>
