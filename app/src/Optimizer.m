@@ -126,10 +126,10 @@ camsaveY1N0 = 1; %do we want to save cam XY points and (R,psi)?
 % springparams.MaxDeflection_in_ = 1.17;
 % springparams.MaxEPE_J_ = 4.7314;
 
-%convert to SI
-springparams.L_spring = springparams.FreeLength_in_*in2m;
-springparams.compressLimit = springparams.MaxDeflection_in_*in2m;
-springparams.Kspring = springparams.Rate_lbs_in_*lb2n/in2m;
+% %convert to SI
+% springparams.L_spring = springparams.FreeLength_in_*in2m;
+% springparams.compressLimit = springparams.MaxDeflection_in_*in2m;
+% springparams.Kspring = springparams.Rate_lbs_in_*lb2n/in2m;
 
 viable = 0;
 PEF = 0.01; %preload energy fraction
@@ -151,11 +151,11 @@ end
 ans = load("Rpsi_debug.mat");
 if figTF
     f1 = figure;
-    polarplot(ans.psi,ans.R)
+    polarplot(ans.psi,ans.R,'color',med,'LineWidth',2)
     hold on
     fullcircpsi = linspace(-2*pi,2*pi,1000);
     fullcircR = .098/2*ones(size(fullcircpsi));
-    polarplot(fullcircpsi,fullcircR,'r')
+    polarplot(fullcircpsi,fullcircR,'color',lite,'LineWidth',2)
     
     camplot.fullcircR = fullcircR;
     camplot.fullcircPsi = fullcircpsi;
@@ -233,9 +233,9 @@ if figTF
     
         %subplot 3: power 
         subplot(4,3,(i-1)*3+3)
-        plot(downsample(stridetime(:,i),n),downsample(I2RBase(:,i),n),'color',[100/256 0 0]) %Joule Heating power with no spring
+        plot(downsample(stridetime(:,i),n),downsample(I2RBase(:,i),n),'color',darkRed) %Joule Heating power with no spring
         hold on
-        plot(downsample(stridetime(:,i),n),downsample(I2R(:,i),n),'color',[211/256 105/256 105/256]) %Joule Heating power with no spring
+        plot(downsample(stridetime(:,i),n),downsample(I2R(:,i),n),'color',liteRed) %Joule Heating power with no spring
         hold on %Joule Heating power with with selected quadratic spring
         ylabel('Power (W)')
         if i==1

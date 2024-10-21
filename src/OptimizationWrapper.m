@@ -298,9 +298,9 @@ for i = 1:tasks
 
     %subplot 3: power 
     subplot(4,3,(i-1)*3+3)
-    plot(downsample(stridetime(:,i),n),downsample(I2RBase(:,i),n),'color',[100/256 0 0]) %Joule Heating power with no spring
+    plot(downsample(stridetime(:,i),n),downsample(I2RBase(:,i),n),'color',darkRed) %Joule Heating power with no spring
     hold on
-    plot(downsample(stridetime(:,i),n),downsample(I2R(:,i),n),'color',[211/256 105/256 105/256]) %Joule Heating power with with selected quadratic spring
+    plot(downsample(stridetime(:,i),n),downsample(I2R(:,i),n),'color',liteRed) %Joule Heating power with with selected quadratic spring
     ylabel('Power (W)')
     if i==1
         leg3 = legend('Baseline (QDD)','PEA');
@@ -343,3 +343,16 @@ for i = 1:length(tasklist)
     msg = sprintf('Electrical energy use (now %1.3f J per stride) reduced by %2.3f pct for %s task, %1.1f assist fraction controller \n',IVenergyUseNEW(i),IV_EnergySavedNEW(i),tasklist{i},assistFractionNEW);
     disp(msg)
 end
+
+% Get difference in power between theo QDD and theo PEA for each timestep
+% of each task
+for i = 1:length(tasklist)
+  powerdiff_arrays(:,i) = I2RBase(:,i) - I2R(:,i);
+  powerdiff_peaks(i) = max(powerdiff_arrays(:,i));
+
+  powerdiff_avgs(i) = mean(powerdiff_arrays(:,i));
+  powerdiff_stdevs(i) = std(powerdiff_arrays(:,i));
+end
+
+powerdiff_peaks_avg = mean(powerdiff_peaks);
+powerdiff_peaks_stdev = std(powerdiff_peaks);

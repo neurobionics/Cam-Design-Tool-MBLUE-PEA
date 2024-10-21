@@ -4,6 +4,7 @@ function [isthiscamviable,surfpoints] = cam_surf_gen(X,thetamin,thetamax,...
 % the range over which it must be rendered, the parameters of the spring to use
 % It returns a binary value indicating whether or not a viable cam was
 % found, and writes that cam's geometry to a file for use in CAD
+    definecolorset
 
     cx3d = X(1);
     cx2d = X(2);
@@ -182,12 +183,12 @@ function [isthiscamviable,surfpoints] = cam_surf_gen(X,thetamin,thetamax,...
         if figTF
             figure
             title('Cam Surface Profiles')
-            plot(xy_Raway_alongnorm(:,1),xy_Raway_alongnorm(:,2),'or','LineWidth',2)
+            plot(xy_Raway_alongnorm(:,1),xy_Raway_alongnorm(:,2),'o','LineWidth',2,'color',lite)
             axis equal
             hold on
             % f(0,-mountdist,'ok')
             plot(0,0,'ok')
-            plot(rvecX,rvecY,'ob')
+            plot(rvecX,rvecY,'o','LineWidth',2,'color',med)
             xlabel('X Dimension (m)')
             ylabel('Y Dimension (m)') 
             leg1=legend('Cam Surface','Rotation Center','Progenetor Curve');
